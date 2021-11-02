@@ -1,0 +1,50 @@
+.root {
+    flex-grow: 1;
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    top: 0;
+}
+
+.menuButton {
+    margin-right: 1rem;
+}
+
+.title {
+    color: #BBB;
+    flex-grow: 1;
+    display: block;
+    padding-left: 1rem;
+}
+
+.search {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 0.2rem;
+    padding-left: 0.2rem;
+    max-width: 50%;
+    width: 160px;
+}
+
+.searchIcon {
+    flex-basis: auto;
+    align-self: center;
+}
+
+.searchInput {
+    color: white;
+    background: none;
+    border-style: none;
+    border: 0;
+    height: 1rem;
+    /*font-size: 1rem;*/
+    
+}
+
+.list {
+    width: 250px,
+}

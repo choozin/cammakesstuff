@@ -1,0 +1,14 @@
+.contactForm {
+    padding: 1rem; 
+    text-align: center;
+    font-family: Impact;
+}
+
+.paperHeader {
+    padding: 1rem 1rem 0rem 1rem;
+    margin: 0 auto;
+}
+
+.submitButton {
+    padding: 1rem 1rem 0rem 1rem;
+}

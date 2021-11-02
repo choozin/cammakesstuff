@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=DotGothic16');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+.window {
+    width: 100%;
+    top: 4rem;
+    position: relative;
+    background-color: #000;
+    padding: 1rem;
+    padding-top: 7rem;
+    margin-top: -4rem;
+    border: double 0.5rem #0F0;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -2rem;
+}
+
+.extendedBottom {
+    z-index: -1;
+    height: 200vh;
+    width: 100%;
+    border: double 0.5rem #0F0;
+    background-color: #000;
+    border-top: none;
+    overflow: auto; 
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: -4rem;
+}
+
+.header h2 {
+    font-family: 'DotGothic16';
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #8F8;
+    text-shadow: 2px 2px #484;
+    margin-bottom: -0.5rem;
+}
+
+.header span {
+    font-family: 'DotGothic16';
+    text-align: center;
+    font-size: 1rem;
+    margin-top: -1rem;
+    font-style: italic;
+    color: #0F0;
+    text-shadow: 2px 2px #F8F;
+    text-decoration: underline;
+}
+
+.space {
+    
+}
+
+.helpModal {
+    height: 75vh;
+    overflow-y: auto;
+    font-family: 'DotGothic16', cursive;
+    border: solid 0.5rem #4B4;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    background-color:#484;
+    color: #242;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* width */
+.window ::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+.window ::-webkit-scrollbar-track {
+  background: #8B8; 
+}
+ 
+/* Handle */
+.window ::-webkit-scrollbar-thumb {
+  background: #040; 
+}
+
+/* Handle on hover */
+.window ::-webkit-scrollbar-thumb:hover {
+  background: #080; 
+}
+
+.window button:focus { 
+    outline: none;
+}
+
+.gameMap {
+    margin: 0 auto;
+    margin-left: -1rem;
+    width: 100%;
+}
+
+.gameMenu {
+    text-align: center;
+    padding: 4rem;
+}
+
+.advancedMenu {
+    text-align: center;
+    padding: 2rem;
+}
+
+.advancedMenu h4 {
+    font-family: 'DotGothic16';
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+    color: #8F8;
+}
+
+.menuBtnSection {
+    margin-bottom: 4rem;
+    display: flex;
+    border-radius: 1rem;
+}
+
+.menuBtn {
+    flex-grow: 1;
+    background: none;
+    border: none;
+    color: #8F8;
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-family: 'DotGothic16', cursive;
+}
+
+.menuBtn:hover {
+    border: dashed 3px #8F8;
+    margin: -3px;
+}
+
+.sliderLabels {
+    color: #8F8;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 6rem;
+    font-family: 'DotGothic16', cursive;
+}
+
+.preview {
+    color: #8F8;
+    font-family: 'DotGothic16';
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.preview span {
+    padding-bottom: 1rem;
+}
+
+.instructionsBtn {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 0rem;
+    padding-bottom: 0.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background: rgba(0,0,0,0);
+    color: #484;
+    border: dashed 0.5rem #484; 
+    border-radius: 2rem;
+    font-family: 'DotGothic16', cursive;
+}
+
+.lightBtn {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background: rgba(0,0,0,0);
+    color: #8F8;
+    border: dashed 0.25rem #8F8; 
+    border-radius: 2rem;
+    font-family: 'DotGothic16', cursive;
+    min-width: 10rem;
+}
+
+.darkBtn {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background: rgba(0,0,0,0);
+    color: #484;
+    border: dashed 0.25rem #484; 
+    border-radius: 2rem;
+    font-family: 'DotGothic16', cursive;
+    min-width: 10rem;
+}
+
+.mediumBtn {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background: rgba(0,0,0,0);
+    color: #484;
+    border: dashed 0.25rem #484; 
+    border-radius: 2rem;
+    font-family: 'DotGothic16', cursive;
+    min-width: 10rem;
+}
+
+.popup {
+    position: fixed;
+    z-index: 50;
+    width: 320px;
+    height: 160px;
+    background: #111;
+    border: double 10px #0F0;
+    color: #0F0;
+    left: 50%;
+    top: 50%;
+    margin-left: -160px;
+    margin-top: -80px;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.bug {
+
+}
+
+.number {
+
+}
+
+.memoryUncleared {
+
+}
+
+.memoryCleared {
+
+}
+
+.cake {
+
+}

@@ -1,0 +1,237 @@
+.container {
+  margin-top: 3rem;
+}
+
+.wideContainer {
+  width: 100%;
+  max-width: 60rem;
+  padding: 4rem 1rem;
+  margin: 0rem auto 6rem;
+}
+
+.fullWidth {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.fullScreen {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #111;
+
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerImage {
+  width: 6rem;
+  height: 6rem;
+}
+
+.headerHomeImage {
+  width: 8rem;
+  height: 8rem;
+}
+
+.main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.footer {
+  width: 100%;
+  height: 40px;
+  background-color: #444;
+  position: absolute;
+  left: 0;
+  color: white;
+  text-align: center;
+}
+
+.backToHome {
+  margin: 3rem 0 0;
+}
+
+@import url('https:/fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+.landingPage * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  max-height: 120vh;
+  overflow: hidden;
+}
+
+.landingPage .showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  color: #fff;
+  z-index: 2;
+}
+
+.landingPage.active {
+  right: 300px;
+}
+
+.landingPage .showcase header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.landingPage iframe {
+  position: absolute;
+  top: -12vw;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 80vw;
+  object-fit: contain;
+  opacity: 0.8;
+  overflow: hidden;
+}
+
+.landingPage .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #03a9f4;
+  mix-blend-mode: overlay;
+}
+
+.landingPage .logo {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.landingPage .text {
+  position: relative;
+  z-index: 10;
+}
+
+.landingPage .text h2 {
+  font-size: 5em;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.landingPage .text h3 {
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.landingPage .text p {
+  font-size: 1em;
+  font-weight: 100;
+  margin: 20px 0px;
+  max-width: 700px;
+}
+
+.landingPage .text a {
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #111;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.landingPage .text a:hover {
+  background: #048;
+  color: #8BF;
+}
+
+.landingPage .social {
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landingPage .social li {
+  list-style: none;
+}
+
+.landingPage .social li a {
+  list-style: none;
+  margin-right: 20px;
+  transform: scale(0.5);
+  transition: 0.5s;
+  color: white;
+}
+
+.landingPage .social li a:hover {
+  transform: scale(0.5) translateY(-15px);
+}
+
+.landingPage .menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landingPage .menu ul {
+  position: relative;
+  list-style: none;
+}
+
+.landingPage .menu ul {
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+
+.landingPage .menu ul:hover {
+  color: #03a9f4;
+}
+
+@media(max-width: 795px) {
+  .landingPage .showcase, .landingPage .showcase header {
+    padding: 40px;
+  }
+  .landingPage .text h2 {
+    font-size: 3em;
+  }
+  .landingPage .text h3 {
+    font-size: 2em;
+  }
+  .landingPage iframe {
+    top: 0;
+  }
+}
